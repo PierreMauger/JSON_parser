@@ -1,0 +1,24 @@
+[
+    {
+        "name": "a",
+        "health": 130,
+        "img": "ressources/path.png",
+        "img_color": "ressources/path.png",
+        "width": 260,
+        "height": 252,
+        "nb_anim": 4,
+        "speed": 5.0,
+        "skill": ["s1", "s2", "s3"]
+    },
+    {
+        "name": "b",
+        "health": 150,
+        "img": "ressources/path.png",
+        "img_color": "ressources/path.png",
+        "width": 260,
+        "height": 252,
+        "nb_anim": 4,
+        "speed": 8.0,
+        "skill": ["s1", "s4", "s5"]
+    }
+]
