@@ -1,5 +1,6 @@
 [
     {
+        "id": 1,
         "name": "a",
         "health": 130,
         "img": "ressources/path.png",
@@ -8,9 +9,10 @@
         "height": 252,
         "nb_anim": 4,
         "speed": 5.0,
-        "skill": ["s1", "s2", "s3"]
+        "skill": [1, 1, 3]
     },
     {
+        "id": 2,
         "name": "b",
         "health": 150,
         "img": "ressources/path.png",
@@ -19,6 +21,6 @@
         "height": 252,
         "nb_anim": 4,
         "speed": 8.0,
-        "skill": ["s1", "s4", "s5"]
+        "skill": [1, 2, 3]
     }
 ]

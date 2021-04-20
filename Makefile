@@ -5,7 +5,8 @@
 ## Main Makefile
 ##
 
-SRC			=
+SRC			=	src/json_parser.c		\
+				src/parser_write.c		\
 
 SRC_MAIN	=	main.c	\
 

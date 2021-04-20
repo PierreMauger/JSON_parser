@@ -5,18 +5,12 @@
 ** main
 */
 
-#include "blib.h"
 #include "parser.h"
 
 int main(int argc, char **argv)
 {
-    char *buffer;
+    char *buffer = bread_file("mons.json", 40);
 
-    if (argc != 2)
-        return 84;
-    buffer = bread_file(argv[1], 20);
-    if (!buffer)
-        return 84;
-    bprintf("%s", buffer);
+    bprintf("%d\n", (int)parser(buffer, "width", 1));
     return 0;
 }

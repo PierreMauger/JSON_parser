@@ -22,20 +22,21 @@ static int get_int_size(int nbr)
 
 char *bitoa(int nbr)
 {
-    char *str = malloc(sizeof(char) * get_int_size(nbr) + 1);
+    int len = get_int_size(nbr);
+    char *str = malloc(sizeof(char) * len + 1);
     int i = 0;
-    int j = 0;
 
     if (!str)
         return NULL;
-    if (nbr < 0)
+    if (nbr < 0) {
         str[get_int_size(nbr) - 1] = '-';
         nbr *= -1;
-    for (; nbr != 0; i++) {
+    }
+    for (int j = 0; nbr != 0; i++) {
         j = nbr % 10;
         nbr /= 10;
         str[i] = j + '0';
     }
-    str[i + 1] = '\0';
+    str[len] = '\0';
     return brevstr(str);
 }
